@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="534.5">
     <Grid HorizontalAlignment="Left" Width="792">
-        <Button Content="" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Top" Width="75" Height="419" Background="White"/>
+        <Button x:Name="C" Content="" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Top" Width="75" Height="419" Background="White" Click="C_Click"/>
         <Button HorizontalAlignment="Left" Margin="77,0,0,0" VerticalAlignment="Top" Width="75" Height="419">
-            <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Height="418" Background="White" Click="Button_Click"/>
+            <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Height="418" Background="White"/>
         </Button>
         <Button Content="" HorizontalAlignment="Left" Margin="151,0,0,0" VerticalAlignment="Top" Width="75" Height="419" Background="White"/>
         <Button Content="" HorizontalAlignment="Left" Margin="225,0,0,0" VerticalAlignment="Top" Width="75" Height="419" Background="White"/>
@@ -21,6 +21,13 @@
         <Button Content="" HorizontalAlignment="Left" Margin="274,0,0,0" VerticalAlignment="Top" Width="52" Height="284" Background="Black"/>
         <Button Content="" HorizontalAlignment="Left" Margin="352,0,0,0" VerticalAlignment="Top" Width="52" Height="284" Background="Black"/>
         <Button Content="" HorizontalAlignment="Left" Margin="426,0,0,0" VerticalAlignment="Top" Width="52" Height="284" Background="Black"/>
+        <Label Content="C" HorizontalAlignment="Left" Margin="22,357,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label Content="D" HorizontalAlignment="Left" Margin="98,357,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label Content="E" HorizontalAlignment="Left" Margin="172,357,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label Content="F" HorizontalAlignment="Left" Margin="247,357,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label Content="G" HorizontalAlignment="Left" Margin="317,357,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label Content="A" HorizontalAlignment="Left" Margin="392,357,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="467,357,0,0" VerticalAlignment="Top" FontSize="36"/>
 
     </Grid>
 </Window>
