@@ -45,11 +45,44 @@ namespace Piano
             var nota_do = new SignalGenerator(44100, 1)
             {
                 Gain = 0.5,
-                Frequency = 261.6,
+                Frequency = 1046.6,
                 Type = SignalGeneratorType.Sin,
                
             }.Take(TimeSpan.FromMilliseconds(500));
             mixer.AddMixerInput(nota_do);
+        }
+
+        private void Btn_Dosos_Click(object sender, RoutedEventArgs e)
+        {
+                var nota_do = NotaDo();
+            var nota_doSos = new SmbPitchShiftingSampleProvider(nota_do);
+            nota_doSos.PitchFactor = (float)Math.Pow(2.0, 1.0 / 12.0);
+            mixer.AddMixerInput(nota_doSos);
+        }
+
+        private ISampleProvider NotaDo()
+        {
+            var nota_do = new SignalGenerator(44100, 1)
+            {
+                Gain = 0.5,
+                Frequency = 1046.6,
+                Type = SignalGeneratorType.Sin,
+
+            }.Take(TimeSpan.FromMilliseconds(500));
+            return nota_do;
+
+        }
+
+        private void Btn_D_Click(object sender, RoutedEventArgs e)
+        {
+          var nota_re = do mo
+        }
+
+        private SmbPitchShiftingSampleProvider DoModificado(double exponente)
+        {
+            var nota_do = NotaDo();
+            var nota_modificada = new SmbPitchShiftingSampleProvider(nota_do);
+            nota_modificada.PitchFactor Factor = (float)
         }
     }
 }
